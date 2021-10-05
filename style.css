@@ -31,12 +31,16 @@ body {
 }
 
 .offcanvas-header {
-    background-color: #545252;
-    color: #000;
+    background-color: #080808fb;
+    color: rgb(94, 93, 93);
 }
 
 .offcanvas-body {
-    background-color: #545252;
+    background-color: #000000;
+}
+
+.btn-close {
+    background-color: #7e010e;
 }
 
 .offcanvas-title {
@@ -115,4 +119,47 @@ h1 {
     font-family: "Overlock SC", cursive;
     text-align: center;
     padding: 0.5rem;
+}
+
+/* servicios */
+
+.servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    background-color: #000;
+    background-image: url("./images/fondo3.jpg");
+    background-image: center;
+}
+
+.servicios h2 {
+    font-family: "Bangers", cursive;
+    color: #b5b5b5;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0.2rem;
+}
+
+.card {
+    margin: 1rem 0;
+    background-color: #ffffff66;
+}
+
+.white {
+    color: #fff;
+    font-family: "Overlock SC", cursive;
+}
+
+.btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fb041c;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #7e010e;
 }
