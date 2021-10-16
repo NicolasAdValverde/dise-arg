@@ -50,12 +50,13 @@ body {
 /* main */
 
 .div__tittle {
-    background-image: url(./images/fondo_titulo.jpg);
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(/images/fondo.jpg);
     background-position: center;
     object-fit: cover;
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
     flex-wrap: wrap;
     padding: 1rem;
 }
@@ -64,6 +65,18 @@ body {
     color: #fb041c;
     font-size: 3rem;
     font-family: "Bangers", cursive;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(./images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
 }
 
 h1 {
@@ -74,8 +87,8 @@ h1 {
 
 .description__h1 {
     color: #fff;
-    font-size: 1rem;
-    padding-top: 1rem;
+    font-size: 1.2rem;
+    padding-top: 18rem;
     text-align: center;
 }
 
@@ -91,7 +104,7 @@ h1 {
 .div__img-pc h4 {
     font-family: "Ephesis", cursive;
     color: #b5b5b5;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
@@ -162,4 +175,44 @@ h1 {
 
 .btn-primary:hover {
     background-color: #7e010e;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    margin-top: 2rem;
+    background: rgb(126, 1, 14);
+    background: linear-gradient(
+        0deg,
+        rgba(126, 1, 14, 1) 0%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.social-icon {
+    padding-bottom: 3rem;
+    display: flex;
+}
+
+.social-icon a {
+    width: 3rem;
+    height: 3rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 1rem;
+    border-radius: 50%;
+}
+.social-icon a .fab {
+    font-size: 2rem;
 }
